@@ -1,0 +1,3 @@
+nav bar:https://codepen.io/matas98/pen/rWoyzy //uses jquery, try to do it without jquery 
+carousel: https://www.shecodes.io/athena/5675-creating-a-carousel-with-html-css-javascript#:~:text=You%20can%20create%20a%20carousel,article%20for%20a%20simple%20carousel.
+take bullet points out: https://www.javatpoint.com/how-to-remove-bullet-points-in-css#:~:text=It%20can%20be%20easily%20done,create%20the%20list%20without%20bullets.
