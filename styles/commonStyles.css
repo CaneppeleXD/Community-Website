@@ -31,6 +31,7 @@ header {
     flex-direction: row-reverse;
     justify-content: start;
     color: #d68b00;
+    z-index: 999;
 }
 
 .logo img {
@@ -71,6 +72,7 @@ nav label {
 }
 
 .list {
+    z-index: 999;
     list-style: none;
     display: flex;
     font-size: 1.2em;
@@ -178,4 +180,10 @@ nav label {
     padding-left: 20px;
     padding-right: 20px;
     box-sizing: border-box;
+    z-index: -1;
+}
+
+h2 {
+    color: black;
+    font-weight: bold;
 }

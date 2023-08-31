@@ -13,9 +13,10 @@
     display: grid;
     align-self: center;
     width: 80%;
-    height: 400px;
+    aspect-ratio: 1/1;
     margin-top: 10px;
     margin-bottom: 10px;
+    z-index: -1;
 }
 
 .carousel button {
@@ -69,4 +70,65 @@ span.slide_title {
     text-align: center;
     text-transform: uppercase;
     color: #000000;
+}
+
+.double_column_wide {
+    display: block;
+    column-count: 1;
+}
+
+#recommended_page {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+#recommended_page img {
+    margin-right: 10px;
+}
+
+#recommended_page_text  {
+    width: 100%;
+    height: 100%;
+}
+
+#recommended_page_text h2 {
+    position: relative;
+    margin-top: 5px;
+    top: 0;
+    text-align: start;
+    width: 100%;
+}
+
+#recommended_page_text p {
+    position: relative;
+    text-align: start;
+    width: 100%;
+}
+
+#all_pages_link {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#all_pages_link span.botton_title {
+    margin: 0px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(0, 0, 149, 0.297);
+    color: white;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+    .double_column_wide {
+        column-count: 2;
+        column-gap: 10px;
+    }
 }
