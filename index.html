@@ -10,8 +10,10 @@
     <meta name="refresh" content="600">
     <meta name="keywords" content="League of Legends news">
     <link rel="stylesheet" type="text/css" href="styles/commonStyles.css">
+    <link rel="stylesheet" type="text/css" href="styles/mainPage.css">
     <link rel="icon" href="">
     <script type="text/javascript" src="scripts/commonScripts.js" defer></script>
+    <script type="text/javascript" src="scripts/mainPage.js" defer></script>
 </head>
 
 <body>
@@ -35,15 +37,27 @@
     </header>
 
     <main>
-        <p id="motivational-quote"></p>
-        <div id="carousel">
-            <div id="slider">
-                <div class="slide">1</div>
-                <div class="slide">2</div>
-                <div class="slide">3</div>
+        <p id="motivational_quote">T1 Faker: "Failure takes a bigger part in people's lives than one may think. It's important not to lose yourself in the emotions from success and failure."</p>
+        <div class="carousel">
+            <div class="slider">
+                <div class="slide active"><img class="slide_image" src="assets/logo.jpg" alt="slide 1 image">
+                    <span class="slide_title">
+                        Slider 1
+                    </span>
+                </div>
+                <div class="slide"><img class="slide_image" src="assets/logo.jpg" alt="slide 2 image">
+                    <span class="slide_title">
+                        Slider 2
+                    </span>
+                </div>
+                <div class="slide"><img class="slide_image" src="assets/logo.jpg" alt="slide 3 image">
+                    <span class="slide_title">
+                        Slider 3
+                    </span>
+                </div>
             </div>
-            <button type="button" class="prev">Prev</button>
-            <button type="button" class="next">Next</button>
+            <button title="back button" type="button" class="prev"><i class="arrow left"></i></button>
+            <button title="forward button" type="button" class="next"><i class="arrow right"></i></button>
         </div>
         <a href="subpages/template1.html">
             <div id="recommended-page">

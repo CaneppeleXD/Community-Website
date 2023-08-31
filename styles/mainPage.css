@@ -1,0 +1,72 @@
+#motivational_quote {
+    text-align: center;
+    font-style: italic;
+    letter-spacing: 0.1em;
+}
+
+@keyframes fading {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.carousel {
+    display: grid;
+    align-self: center;
+    width: 80%;
+    height: 400px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.carousel button {
+    background: none;
+    position: absolute;
+    border: none;
+    align-self: center;
+}
+
+.carousel button.prev{
+    justify-self: start;
+}
+
+.carousel button.next{
+    justify-self: end;
+}
+
+.carousel .slider { 
+    position: relative;
+    width: 100%; 
+    margin: 0px;
+}
+.carousel .slider .slide {
+    display: none;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+}
+
+.carousel .slider .slide.active {
+    animation-name:fading;
+    animation-duration: 1.5s;
+    display: block;
+}
+
+img.slide_image {
+    align-self: center;
+    width: 100%;
+    height: 100%;
+    justify-self: center;
+}
+
+span.slide_title {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+}
