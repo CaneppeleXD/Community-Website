@@ -1,0 +1,27 @@
+#introduction {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+#introduction span {
+    margin: 10px;
+}
+
+#introduction img {
+    justify-self: center;
+    max-width: 80%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.subject_explanation {
+    margin-bottom: 10px;
+}
+
+.subject_explanation h2 {
+    margin-bottom: 10px;
+}
+
+.subject_explanation p{
+    margin-bottom: 10px;
+}

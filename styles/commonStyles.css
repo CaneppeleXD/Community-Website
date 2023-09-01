@@ -10,13 +10,6 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-@media (min-width: 768px) {
-    main {
-        max-width: 1200px;
-        margin: auto;
-    }
-}
-
 a {
     text-decoration: none;
 }
@@ -183,7 +176,65 @@ nav label {
     z-index: -1;
 }
 
+@media (min-width: 768px) {
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
 h2 {
     color: black;
     font-weight: bold;
 }
+
+.double_column_wide {
+    display: block;
+    column-count: 1;
+}
+
+@media screen and (min-width: 768px) {
+    .double_column_wide {
+        column-count: 2;
+        column-gap: 10px;
+    }
+}
+
+footer {
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color: rgb(19, 0, 189);
+    align-items: center;
+    color: #d68b00;
+    justify-content: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.center_content {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#contact_info ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.title {
+    text-align: center;
+}
+    
+hr.solid {
+    border-top: 1px solid #bbb;
+    width: 95%;
+}
+
+.center_text {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+    

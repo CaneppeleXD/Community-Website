@@ -1,0 +1,48 @@
+#introduction {
+    margin-bottom: 50px;
+    justify-content: center;
+}
+
+#introduction span {
+    display: block;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#introduction img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+video.explanatory_video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+img.explanatory_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.subject_explanation {
+    display: block;
+    margin-bottom: 30px;
+}
+
+.subject_explanation h2 {
+    margin-bottom: 20px;
+}
+
+.subject_explanation p{
+    margin-bottom: 20px;
+}
+

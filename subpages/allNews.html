@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>All News</title>
+    <meta charset="utf-8">
+    <meta name="description" content="This is a website for news about League of Legends.">
+    <meta name="author" content="João Canepelle">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="refresh" content="600">
+    <meta name="keywords" content="League of Legends news">
+    <link rel="stylesheet" type="text/css" href="../styles/commonStyles.css">
+    <link rel="stylesheet" type="text/css" href="../styles/allNews.css">
+    <link rel="icon" href="">
+    <script type="text/javascript" src="../scripts/commonScripts.js" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <a href="../index.html">
+            <div class="logo">
+                <img src="../assets/logo.jpg" alt="League of News Logo and Title" />
+            </div>
+        </a>
+        <nav>
+            <input type="checkbox" id="hamburger" />
+            <label for="hamburger">☰</label>
+            <ul class="list">
+                <li class="list_item active"><a href="#">Home</a></li>
+                <li class="list_item"><a href="subpages/allNews.html">All News</a></li>
+                <li class="list_item"><a href="#">Page 1</a></li>
+                <li class="list_item"><a href="#">Page 2</a></li>
+                <li class="list_item"><a href="#">Page 3</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="title">All News and Pages</h1>
+        <div id="all_pages_display">
+            <!-- Generate the items with handlebars.js -->
+            <a href="/subpages/template2.html">
+                <div class="page_item">
+                    <img src="../assets/logo.jpg" alt="first page link">
+                    <div class="page_item_text">
+                        <h2>Title First Page</h2>
+                        <p>Description First Page</p>
+                    </div>
+
+                </div>
+            </a>
+            <a href="/subpages/template2.html">
+                <div class="page_item">
+
+                    <img src="../assets/logo.jpg" alt="second page link">
+                    <div class="page_item_text">
+                        <h2>Title Second Page</h2>
+                        <p>Description Second Page</p>
+                    </div>
+
+                </div>
+            </a>
+            <a href="/subpages/template2.html">
+                <div class="page_item">
+                    <img src="../assets/logo.jpg" alt="third page link">
+                    <div class="page_item_text">
+                        <h2>Title Third Page</h2>
+                        <p>Description Third Page</p>
+                    </div>
+
+                </div>
+            </a>
+        </div>
+    </main>
+    <footer id="footer">
+        <div class="double_column_wide">
+            <div class="center_content" id="copyright">
+                <span>
+                    By: João Vitor Caneppele
+                </span>
+            </div>
+            <div class="center_content" id="contact_info">_
+                <ul>
+                    <li>
+                        E_mail: service@leagueofnews.com
+                    </li>
+                    <li>
+                        Phone: +44 1523 858962
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

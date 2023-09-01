@@ -1,0 +1,26 @@
+.page_item {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    height: 200px;
+}
+
+@media screen and (min-width: 768px) {
+    .page_item {
+        width: 50%;
+        float: left;
+    }
+}
+
+.page_item img {
+    width: 50%;
+    height: 100%;
+}
+
+.page_item_text {
+    display: flex;
+    flex-direction: column;
+}
