@@ -7,3 +7,5 @@ css arows: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_arrows
 
 
 NEWS 1: New To League
+NEWS 2: WORLDS 2023
+NEWS 3: LOL Ranks
