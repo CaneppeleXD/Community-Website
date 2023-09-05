@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../styles/allNews.css">
     <link rel="icon" href="">
     <script type="text/javascript" src="../scripts/commonScripts.js" defer></script>
+    <script type="text/javascript" src="../scripts/allNews.js" defer></script>
+    <script type="text/javascript" src="../scripts/handlebars-v4.7.8.js"></script>
 </head>
 
 <body>
@@ -37,39 +39,21 @@
 
     <main>
         <h1 class="title">All News and Pages</h1>
+        <script id="all_pages_display_template" type="template/handlebars">
+            {{#each tile}}
+                <a href="{{this.path}}">
+                    <div class="page_item">
+                        <img src="{{this.imagePath}}" alt="#this.imageAlt">
+                        <div class="page_item_text">
+                            <h2 class="page_item_title">{{this.title}}</h2>
+                            <p class="page_item_desc">{{this.description}}</p>
+                        </div>
+                    </div>
+                </a>
+            {{/each}}
+        </script>
         <div id="all_pages_display">
-            <!-- Generate the items with handlebars.js -->
-            <a href="/subpages/template2.html">
-                <div class="page_item">
-                    <img src="../assets/logo.jpg" alt="first page link">
-                    <div class="page_item_text">
-                        <h2>Title First Page</h2>
-                        <p>Description First Page</p>
-                    </div>
-
-                </div>
-            </a>
-            <a href="/subpages/template2.html">
-                <div class="page_item">
-
-                    <img src="../assets/logo.jpg" alt="second page link">
-                    <div class="page_item_text">
-                        <h2>Title Second Page</h2>
-                        <p>Description Second Page</p>
-                    </div>
-
-                </div>
-            </a>
-            <a href="/subpages/template2.html">
-                <div class="page_item">
-                    <img src="../assets/logo.jpg" alt="third page link">
-                    <div class="page_item_text">
-                        <h2>Title Third Page</h2>
-                        <p>Description Third Page</p>
-                    </div>
-
-                </div>
-            </a>
+            <!-- Items are generated with handlebars.js -->
         </div>
     </main>
     <footer id="footer">

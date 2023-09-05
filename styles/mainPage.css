@@ -69,6 +69,7 @@ img.slide_image {
     width: 100%;
     height: 100%;
     justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 span.slide_title {
@@ -90,15 +91,21 @@ span.slide_title {
     height: 200px;
     display: flex;
     flex-direction: row;
+    -webkit-break-inside: avoid;
+    break-inside: avoid;
 }
 
 #recommended_page img {
     margin-right: 10px;
+    width: 20vw;
+    max-width: 200px;
+    object-fit: cover;
 }
 
 #recommended_page_text  {
     width: 100%;
     height: 100%;
+    padding: 5px;
 }
 
 #recommended_page_text h2 {
@@ -115,13 +122,24 @@ span.slide_title {
     width: 100%;
 }
 
+.double_column_wide a div {
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 #all_pages_link {
     position: relative;
     height: 200px;
     width: 100%;
     margin-bottom: 20px;
     background-size: cover;
-    background-image: url('./subpages/subPagesAssets/tiers.jpg');
+    background-image: url('../subpages/subPagesAssets/arcade.jpg');
+    -webkit-break-inside: avoid;
+    break-inside: avoid;
+}
+
+#all_pages_link span {
+    font-size: larger;
 }
 
 span.botton_title {

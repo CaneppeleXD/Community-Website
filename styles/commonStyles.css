@@ -12,6 +12,7 @@ body {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 /* General Styles for the header */
@@ -195,11 +196,10 @@ h2 {
 
 @media screen and (min-width: 768px) {
     .double_column_wide {
-        /* add webkit and moz where needed */
         -webkit-column-count: 2;
         -moz-column-count: 2;
         column-count: 2;
-        column-gap: 10px;
+        column-gap: 20px;
     }
 }
 
