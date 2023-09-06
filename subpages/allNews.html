@@ -8,20 +8,23 @@
     <meta name="author" content="João Canepelle">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="refresh" content="600">
-    <meta name="keywords" content="League of Legends news">
+    <meta name="keywords" content="All News">
     <link rel="stylesheet" type="text/css" href="../styles/commonStyles.css">
     <link rel="stylesheet" type="text/css" href="../styles/allNews.css">
-    <link rel="icon" href="">
+    <link rel="icon" href="../assets/logo.jpg">
     <script type="text/javascript" src="../scripts/commonScripts.js" defer></script>
     <script type="text/javascript" src="../scripts/allNews.js" defer></script>
     <script type="text/javascript" src="../scripts/handlebars-v4.7.8.js"></script>
 </head>
 
 <body>
+    <!-- Header is generated with Handlebars as the header id is "sub_page_header", to know more take a look into "commonScripts.js" file -->
     <header id="sub_page_header" class="header">all_news_header_link</header>
 
     <main>
         <h1 class="title">All News and Pages</h1>
+        <!-- Declares the tamplate for the tile that shows the page's information -->
+        <!-- The each helper states that one template will be generated for every instance of tile -->
         <script id="all_pages_display_template" type="template/handlebars">
             {{#each tile}}
                 <a href="{{this.path}}">
@@ -36,28 +39,11 @@
             {{/each}}
         </script>
         <div id="all_pages_display">
-            <!-- Items are generated with handlebars.js -->
+            <!-- Items are generated with Handlebars -->
         </div>
     </main>
-    <footer id="footer">
-        <div class="double_column_wide">
-            <div class="center_content" id="copyright">
-                <span>
-                    By: João Vitor Caneppele
-                </span>
-            </div>
-            <div class="center_content" id="contact_info">_
-                <ul>
-                    <li>
-                        E_mail: service@leagueofnews.com
-                    </li>
-                    <li>
-                        Phone: +44 1523 858962
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
+    <!-- The footer content is generated using Handlebars, so I don't need to change every footer's page every time I need to change something in it -->
+    <footer id="footer"></footer>
 </body>
 
 </html>

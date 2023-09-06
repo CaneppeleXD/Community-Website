@@ -25,6 +25,8 @@ function nextSlide(){
     slides[index].classList.add('active');      
 }
 
+setInterval(nextSlide, 5000);
+
 document.querySelector('.next').addEventListener('click', e => {
     nextSlide();
 });

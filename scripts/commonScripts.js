@@ -1,3 +1,4 @@
+//Gnerate the sub pages header, it will only generate the header if the page has the "sub_page_header" in any of its elements
 if (document.getElementById("sub_page_header") != null) {
     var subPageHeaderSrc = `
     <a href="../index.html">
@@ -29,6 +30,32 @@ if (document.getElementById("sub_page_header") != null) {
     document.getElementById(pageHeaderName).classList.add("active");
 }
 
+//Generate the footer using Handlebars, the footerSrc variable declares the template
+var footerSrc = `
+<div class="double_column_wide">
+    <div class="center_content" id="copyright">
+        <span>
+            By: João Vitor Caneppele
+        </span>
+    </div>
+    <div class="center_content" id="contact_info">_
+        <ul>
+            <li>
+                E-mail: service@leagueofnews.com
+            </li>
+            <li>
+                Phone: +44 1523 858962
+            </li>
+        </ul>
+    </div>
+</div>
+`;
+
+var footerTemplate = Handlebars.compile(footerSrc);
+var footerRendered = footerTemplate();
+document.getElementById("footer").innerHTML = footerRendered;
+
+//Add event listeners so the user can control the font size of the website
 document.getElementById("default_font_size").addEventListener("click", function () {
     document.getElementsByTagName("body")[0].className = "default_font_size";
 });

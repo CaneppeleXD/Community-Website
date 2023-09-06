@@ -9,6 +9,11 @@
     100% { opacity: 1; }
 }
 
+@keyframes bluring {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
 .carousel {
     display: grid;
     align-self: center;
@@ -56,6 +61,8 @@
     width: 100%;
     height: 100%;
     margin: 0px;
+    animation-name:bluring;
+    animation-duration: 1.5s;
 }
 
 .carousel .slider .slide.active {
