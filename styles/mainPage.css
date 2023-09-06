@@ -4,6 +4,7 @@
     letter-spacing: 0.1em;
 }
 
+/* Animations for the sliders */
 @keyframes fading {
     0% { opacity: 0; }
     100% { opacity: 1; }
@@ -14,6 +15,8 @@
     100% { opacity: 0; }
 }
 
+/* Styles the carousel so it stays right in the middle of the screen, it also sets the display as grid so it's possible to 
+set the buttons in the right place of the carrousel */
 .carousel {
     display: grid;
     align-self: center;
@@ -46,12 +49,15 @@
     justify-self: end;
 }
 
+/* The slider is where the slides sit, it must not occupy the whole carousel because the buttons must appear in it as well */
 .carousel .slider { 
     position: relative;
     width: 90%; 
     margin: 0px;
     justify-self: center;
 }
+
+/* The slide's display is set to none so it don't appear when it's not supposed to, only when the active class is apply to it */
 .carousel .slider .slide {
     object-fit: cover;
     display: none;
@@ -93,6 +99,8 @@ span.slide_title {
     align-content: center;
 }
 
+/* The recommended page tile is inside a div with column count, so it needs to have the break-inside equals to avoid so 
+its content doesn't go the to other column when it's not supposed to */
 #recommended_page {
     width: 100%;
     min-height: 200px;
@@ -103,6 +111,8 @@ span.slide_title {
     break-inside: avoid;
 }
 
+/* Styles the items inside the recommended page tile, a image should appear on the left side of it and a small text with a 
+title in the right side */
 #recommended_page img {
     margin-right: 10px;
     width: 20vw;
@@ -136,6 +146,8 @@ span.slide_title {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+/* The all pages link tile works differently from the recommended page tile as it is only a div with a background-image, there is
+no <img> tag to style */
 #all_pages_link {
     position: relative;
     min-height: 200px;

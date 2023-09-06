@@ -17,16 +17,21 @@
 </head>
 
 <body>
+    <!-- Header is generated with Handlebars as the header id is "sub_page_header", to know more take a look into "commonScripts.js" file -->
     <header id="sub_page_header" class="header">new_to_league_header_link</header>
 
     <main>
         <h1 class="title">New to League of Legends</h1>
+        <!-- Introduction of the page, generally with a small text about the content of the page and a image -->
         <section id="introduction">
             <span>Welcome to League of News. In this you will find a good explanation about what is League of Legends and how its ecosystem works</span>
             <img src="subPagesAssets/NewToLeagueLogo.jpg" alt="League of Legends logo with champions in the background">
         </section>
+        <!-- The page is divided in sections, every topic has it's own section, the may have videos, images and, of course, text -->
+        <!-- In the sections, there are explanatory images and videos that are styled a little bit different than the medias in the introduction -->
         <section id="section_1" class="subject_explanation">
             <hr class="solid">
+            <!-- Uses the <h2> tag for the subtile -->
             <h2>What is League of Legends?</h2>
             <p>
                 League of Legends is a game in the Multiplayer Online Battle Arena (MOBA) genre. Two teams, consisting of five players each, compete against each other to be the 
@@ -41,6 +46,7 @@
         <section id="section_1" class="subject_explanation">
             <hr class="solid">
             <h2>Overview</h2>
+            <!-- This time the topic is divided in two paragraphs, so there is no need of a <br> tag -->
             <p>
                 Champions are the player-controlled units in League of Legends. Champions are distinguishable from other units in a few ways. First, generally they're bigger than 
                 game-controlled units; second, an experienced player will be able to recognize all of their models; and third, and easiest to tell, all units in the game have health bars 
@@ -83,6 +89,7 @@
             </p>
         </section>
     </main>
+    <!-- The footer's content is generated using Handlebars, so I don't need to change every footer's page every time I need to change something in it -->
     <footer id="footer"></footer>
 </body>
 

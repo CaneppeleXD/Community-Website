@@ -1,7 +1,11 @@
+/* The styles for the All News page are pretty simple as it's just necessary to style the class so every div with the
+page_item class gets it as well */
 .all_pages_display {
     width: 100%;
 }
 
+/* The page_item works in way that it tries to occupy 100% of what it can, however, when the screen is wide enought, it
+changes its widht to 50% and some margins are applied as it's possibly to see in the media query */
 .page_item {
     box-sizing: border-box;
     margin-bottom: 20px;
@@ -37,6 +41,9 @@
         float: left;
     }
 
+    /* This is needed because the height of the one's height might get greater than the other ones, this makes the tile 
+    below to jump to the column on the right, the left tiles only clears the left side to stay always in the left side
+    of the display */
     #all_pages_display a:nth-child(odd) .page_item {
         clear: left;
     }
