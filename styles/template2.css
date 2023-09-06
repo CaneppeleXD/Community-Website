@@ -1,3 +1,6 @@
+/* The styling of this template focus on making the text of the sections the more organized and concise as possible */
+
+/* The introduction is styled to stay in the center. The text of the introduction if justified to the other and the image is a little bit smaller then the other images */
 #introduction {
     margin-bottom: 50px;
     justify-content: center;
@@ -18,6 +21,8 @@
     margin-bottom: 10px;
 }
 
+/* This the base styling of the template, the image is a little bit bigger then the one in the introduction and it adds to the text tags (<p> and <h2>) some margin
+so the users have better reading experience */
 img.explanatory_img {
     display: block;
     margin-left: auto;

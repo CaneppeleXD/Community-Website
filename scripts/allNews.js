@@ -1,3 +1,6 @@
+// Used handlebars to generate the content for the all_pages_display div
+
+// The allPagesTiles variable stores the information in a list of obejects to build the elements later
 var allPagesTiles = [
     {
         title:"New to League of Legends",
@@ -22,6 +25,7 @@ var allPagesTiles = [
     }
 ];
 
+// Render the handlebars template
 var allPagesSrc = document.getElementById("all_pages_display_template").innerHTML;
 var allPagesTemplate = Handlebars.compile(allPagesSrc);
 var allPagesRendered = allPagesTemplate({tile: allPagesTiles});

@@ -1,4 +1,4 @@
-//Gnerate the sub pages header, it will only generate the header if the page has the "sub_page_header" in any of its elements
+//Generate the sub pages header, it will only generate the header if the page has the "sub_page_header" in any of its elements
 if (document.getElementById("sub_page_header") != null) {
     var subPageHeaderSrc = `
     <a href="../index.html">
@@ -27,6 +27,7 @@ if (document.getElementById("sub_page_header") != null) {
     var subPageHeaderTemplate = Handlebars.compile(subPageHeaderSrc);
     var subPageHeaderRendered = subPageHeaderTemplate();
     document.getElementById("sub_page_header").innerHTML = subPageHeaderRendered;
+    // The next line add the class active to the rigth element of the nav bar, the element is the one from the selected page
     document.getElementById(pageHeaderName).classList.add("active");
 }
 

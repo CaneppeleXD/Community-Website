@@ -1,6 +1,10 @@
-const slides = document.querySelectorAll('.slide');
-let index = 0;
+// This Js file constrols the carousel in the main page
+// The slides variable stores all the slides elements
+var slides = document.querySelectorAll('.slide');
+var index = 0;
 
+// Functions to control the back and forth of the slides
+// Is works by addind the active class to slide it wants to show and removing this class from the slide it wants to hide
 function prevSlide(){
     slides[index].classList.remove('active');
     index--;
