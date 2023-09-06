@@ -10,6 +10,18 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body.default_font_size {
+    font-size: 1em;
+}
+
+body.medium_font_size {
+    font-size: 1.5em;
+}
+
+body.large_font_size {
+    font-size: 2em;
+}
+
 a {
     text-decoration: none;
     color: inherit;
@@ -97,7 +109,7 @@ nav label {
 }
 
 .list_item:hover {
-    background-color: rgb(15, 0, 155);;
+    background-color: rgb(69, 48, 255);
 }
 
 .list_item.active {
@@ -133,6 +145,18 @@ nav label {
         border-radius: 0.5em;
     }
 
+}
+
+#font_size_selector {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 1em;
+    align-items: end;
+}
+
+.font_size_selector_text {
+    margin: 0px;
 }
 
 /* Arrows to be used in the Carousel */
@@ -182,11 +206,6 @@ nav label {
         max-width: 1200px;
         margin: auto;
     }
-}
-
-h2 {
-    color: black;
-    font-weight: bold;
 }
 
 .double_column_wide {

@@ -14,6 +14,7 @@
     <link rel="icon" href="">
     <script type="text/javascript" src="scripts/commonScripts.js" defer></script>
     <script type="text/javascript" src="scripts/mainPage.js" defer></script>
+    <script type="text/javascript" src="../scripts/handlebars-v4.7.8.js"></script>
 </head>
 
 <body>
@@ -29,11 +30,16 @@
             <ul class="list">
                 <li class="list_item active"><a href="#">Home</a></li>
                 <li class="list_item"><a href="subpages/allNews.html">All News</a></li>
-                <li class="list_item"><a href="subpages/News1.html">New To League</a></li>
-                <li class="list_item"><a href="subpages/News2.html">Worlds 2023</a></li>
-                <li class="list_item"><a href="subpages/News3.html">Lol Ranks</a></li>
+                <li class="list_item"><a href="subpages/NewToLeague.html">New To League</a></li>
+                <li class="list_item"><a href="subpages/Worlds2023.html">Worlds 2023</a></li>
+                <li class="list_item"><a href="subpages/Tiers.html">Lol Ranks</a></li>
             </ul>
         </nav>
+        <ul id="font_size_selector">
+            <li id="default_font_size"><h3 class="font_size_selector_text">A</h3></li>
+            <li id="medium_font_size"><h2 class="font_size_selector_text">A</h2></li>
+            <li id="large_font_size"><h1 class="font_size_selector_text">A</h1></li>
+        </ul>
     </header>
 
     <main>
@@ -42,7 +48,7 @@
         <div class="carousel">
             <div class="slider">
                 <div class="slide active">
-                    <a href="subpages/News1.html">
+                    <a href="subpages/NewToLeague.html">
                         <img class="slide_image" src="subpages/subPagesAssets/NewToLeagueLogo.jpg" alt="slide 1 image">
                         <span class="slide_title">
                             New to League?
@@ -50,7 +56,7 @@
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="subpages/News2.html">
+                    <a href="subpages/Worlds2023.html">
                         <img class="slide_image" src="subpages/subPagesAssets/worlds2023logo.jpg" alt="slide 2 image">
                         <span class="slide_title">
                             Worlds 2023
@@ -58,7 +64,7 @@
                     </a>
                 </div>
                 <div class="slide">
-                    <a href="subpages/News3.html">
+                    <a href="subpages/Tiers.html">
                         <img class="slide_image" src="subpages/subPagesAssets/imagenews3.jpg" alt="slide 3 image">
                         <span class="slide_title">
                             League of Legends Ranks/Tiers
@@ -70,7 +76,7 @@
             <button title="forward button" type="button" class="next"><i class="arrow right"></i></button>
         </div>
         <div class="double_column_wide">
-            <a href="subpages/template1.html">
+            <a href="subpages/Tiers.html">
                 <div id="recommended_page">
                     <img src="subpages/subPagesAssets/tiers.jpg" alt="recommended page image">
                     <div id="recommended_page_text">
@@ -82,7 +88,7 @@
                     </div>
                 </div>
             </a>
-            <a href="subpages/allPages.html">
+            <a href="subpages/allNews.html">
                 <div id="all_pages_link">
                     <span class="botton_title">All Pages</span>
                 </div>
