@@ -4,6 +4,7 @@ if (document.getElementById("sub_page_header") != null) {
     <a href="../index.html">
         <div class="logo">
             <img src="../assets/logo.jpg" alt="League of News Logo and Title" />
+            <span>League of News</span>
         </div>
     </a>
     <nav>

@@ -40,13 +40,29 @@ header {
     z-index: 999;
 }
 
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .logo img {
     max-width: 60px;
+}
+
+.logo span {
+    display: flex;
+    font-size: 2em;
+    font-weight: 600;
 }
 
 @media (min-width: 768px) {
     .logo img {
         max-width: 100px;
+    }
+
+    .logo span {
+        display: none;
     }
 
     header {
@@ -116,6 +132,14 @@ nav label {
     border-bottom: 1px solid #d68b00;
 }
 
+#font_size_selector {
+    display: none;
+}
+
+.font_size_selector_text {
+    margin: 0px;
+}
+
 /* Media query so the nav-bar appears in the header the screen is wide enough */
 
 @media screen and (min-width: 768px) {
@@ -145,18 +169,13 @@ nav label {
         border-radius: 0.5em;
     }
 
-}
-
-#font_size_selector {
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    gap: 1em;
-    align-items: end;
-}
-
-.font_size_selector_text {
-    margin: 0px;
+    #font_size_selector {
+        display: flex;
+        flex-direction: row;
+        list-style: none;
+        gap: 1em;
+        align-items: end;
+    }
 }
 
 /* Arrows to be used in the Carousel */
@@ -165,29 +184,29 @@ nav label {
     border-width: 0 3px 3px 0;
     display: inline-block;
     padding: 3px;
-  }
-  
-  .right {
+}
+
+.right {
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
-  }
-  
-  .left {
+}
+
+.left {
     transform: rotate(135deg);
     -webkit-transform: rotate(135deg);
-  }
-  
-  .up {
+}
+
+.up {
     transform: rotate(-135deg);
     -webkit-transform: rotate(-135deg);
-  }
-  
-  .down {
+}
+
+.down {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
-  }
+}
 
-  main {
+main {
     color: white;
     font-family: Georgia, Palatino, serif;
     min-height: 100vh;
@@ -248,7 +267,7 @@ footer {
 .title {
     text-align: center;
 }
-    
+
 hr.solid {
     border-top: 1px solid #bbb;
     width: 95%;
@@ -259,4 +278,3 @@ hr.solid {
     width: 100%;
     text-align: center;
 }
-    
