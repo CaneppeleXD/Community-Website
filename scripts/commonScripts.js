@@ -24,9 +24,12 @@ if (document.getElementById("sub_page_header") != null) {
         <li id="large_font_size"><h1 class="font_size_selector_text">A</h1></li>
     </ul>`;
 
+    //Gets the sub page name in the header's html
     var pageHeaderName = document.getElementById("sub_page_header").innerHTML;
+    //Generated the header using Handlebars
     var subPageHeaderTemplate = Handlebars.compile(subPageHeaderSrc);
     var subPageHeaderRendered = subPageHeaderTemplate();
+    //Inserts the header in the desired element
     document.getElementById("sub_page_header").innerHTML = subPageHeaderRendered;
     // The next line add the class active to the rigth element of the nav bar, the element is the one from the selected page
     document.getElementById(pageHeaderName).classList.add("active");
@@ -58,14 +61,15 @@ var footerRendered = footerTemplate();
 document.getElementById("footer").innerHTML = footerRendered;
 
 //Add event listeners so the user can control the font size of the website
+//Event listener for default font size
 document.getElementById("default_font_size").addEventListener("click", function () {
     document.getElementsByTagName("body")[0].className = "default_font_size";
 });
-
+//Event listener for medium font size
 document.getElementById("medium_font_size").addEventListener("click", function () {
     document.getElementsByTagName("body")[0].className = "medium_font_size";
 });
-
+//Event listener for large font size
 document.getElementById("large_font_size").addEventListener("click", function () {
     document.getElementsByTagName("body")[0].className = "large_font_size";
 });
