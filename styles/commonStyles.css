@@ -138,6 +138,7 @@ nav label {
 
 .font_size_selector_text {
     margin: 0px;
+    cursor: pointer;
 }
 
 /* Media query so the nav-bar appears in the header the screen is wide enough */
